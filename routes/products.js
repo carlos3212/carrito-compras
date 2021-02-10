@@ -10,25 +10,22 @@ exports.create = function(req, res){
     put: false,
     action: '/additem',
     products: new Products({
-        cod: '',
         prod_name: '',
-        prod_brand: '',
         subcategory: '',
-        tags: '',
-        price: '',
-        prod_units: ''
+        category_id: '',
+        precio: '',
+        cantidad: ''
     })
   });
 };
 exports.store = function(req, res){
   var products = new Products({
-    cod:req.body.cod,
     prod_name: req.body.prod_name,
-    prod_brand: req.body.prod_brand,
-    subcategory:req.body.subcategory,
-    tags: req.body.tags,
-    price: req.body.price,
-    prod_units: req.body.prod_units
+        subcategory: req.body.subcategory,
+        category_id: req.body.category_id,
+        precio: req.body.precio,
+        cantidad:req.body.cantidad
+    
   });
   products.save(function(error, documento){
     if(error){

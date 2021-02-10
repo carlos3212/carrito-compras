@@ -60,4 +60,15 @@ router.get('/remove/:id', function(req, res, next) {
   res.redirect('/cart');
 });
 
+// router.delete('/delete/:id',function(req, res, next) {
+//   var productId = req.params.id;
+//   var cart = new Cart(req.session.cart ? req.session.cart : {});
+
+//   cart.deleteProducto(productId);
+//   req.session.cart = cart;
+//   res.redirect('/cart');
+// });
+
+
+
 module.exports = router;

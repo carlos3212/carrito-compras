@@ -4,14 +4,31 @@ var productos = require ('../routes/products');
 
 var Productsschema = mongoose.Schema({
 
-	cod: {type: String,	required: true	  },
-	prod_name: {type: String,	required: true	  },
-	prod_brand: {type: String,	required: true	  },
-	subcategory: {type: String,	required: true	  },
-	tags: {type: String,	required: true	  },
-	price: {   type: Number,     required: true	  },
-	prod_units: { type: String,  required: true	  }
-	//user: {type: String,	required: true	  }
+	prod_name: {
+		type: String,
+		required: true
+	  },
+	  subcategory: {
+		type: String,
+		required: true
+	  },
+	  category_id: {
+		type: String,
+		required: true
+	  },
+	  precio: {
+		type: String,
+		required: true
+	  },
+	  cantidad: {
+		type: String,
+		required: true
+	  },
+	  
+	},
+	{
+	  timestamps: true
+	
 	 
 	
 });

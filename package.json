@@ -27,5 +27,13 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carlos3212/carrito-compras.git"
+  },
+  "bugs": {
+    "url": "https://github.com/carlos3212/carrito-compras/issues"
+  },
+  "homepage": "https://github.com/carlos3212/carrito-compras#readme",
   "description": ""
 }
